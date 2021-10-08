@@ -12,6 +12,10 @@ public class Users {
     @CsvBindByName
     private String password;
 
+    public Users() {
+
+    }
+
     public Users (String mail, String password) {
 
         this.mail = mail;
