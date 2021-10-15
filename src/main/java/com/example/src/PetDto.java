@@ -2,6 +2,9 @@ package com.example.src;
 
 import java.time.format.DateTimeFormatter;
 
+/*
+Clase Dto de mascotas donde estan los parametros de nombre, nombre de la foto y la fecha en que fue subida imagen.
+ */
 public class PetDto {
 
     private String name;
@@ -15,6 +18,9 @@ public class PetDto {
         this.date = date;
     }
 
+    /*
+ metodo que se sobrescribe de toString para retornar los valores de los objetos
+   */
     @Override
     public String toString() {
         return "PetDto{" +

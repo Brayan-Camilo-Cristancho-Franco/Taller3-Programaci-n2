@@ -4,6 +4,9 @@ import com.opencsv.bean.CsvBindByName;
 
 import java.util.Objects;
 
+/*
+Clase Dto de Users donde estan los parametros de correo contraseña y rol del usuario.
+ */
 public class Users {
 
     @CsvBindByName

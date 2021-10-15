@@ -10,9 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fc81071-a3fa-4e3f-abdf-d2482be08bf0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/src/Indexservlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/src/Indexservlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/src/MultipartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/src/MultipartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/src/PetDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/src/PetDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/src/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/src/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Taller3-Programacion2-1.0-SNAPSHOT/Funcionario.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Taller3-Programacion2-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Taller3-Programacion2-1.0-SNAPSHOT/WEB-INF/classes/Usuarios.csv" beforeDir="false" />
@@ -25,8 +27,6 @@
       <change beforePath="$PROJECT_DIR$/target/Taller3-Programacion2-1.0-SNAPSHOT/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Taller3-Programacion2-1.0-SNAPSHOT/resul.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Taller3-Programacion2-1.0-SNAPSHOT/uploads/img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Taller3-Programacion2-1.0-SNAPSHOT/uploads/img2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Taller3-Programacion2-1.0-SNAPSHOT/uploads/img3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Usuarios.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

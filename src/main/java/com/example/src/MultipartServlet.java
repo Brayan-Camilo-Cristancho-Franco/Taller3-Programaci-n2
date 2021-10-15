@@ -32,6 +32,10 @@ public class MultipartServlet extends HttpServlet {
         message = "Hello World!";
     }
 
+    /*
+     * metodo doPost encargado de dividir la imagen y cargarla al la carpeta uploads, ademas de asignarle un nombre
+     * Ademas añade los datos de mascota al Json
+     */
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         response.setContentType("text/html");
 
@@ -68,15 +72,18 @@ public class MultipartServlet extends HttpServlet {
                     pets.get(cont).setNamePhoto(fileName);
                     cont++;
                 }
+                HttpSession sesion = request.getSession(true);
 
+                PrintWriter out = response.getWriter();
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        // ese 5 representa el tiempo que demore en refrescarse en segundos osea el tiempo en que demorara en llevar al otro html que especificamos
         PrintWriter out = response.getWriter();
 
         out.println("<html><head>");
-        out.println("<meta http-equiv='refresh' content= '5; URL=form.html'>");// ese 10 representa el tiempo que demore en refrescarse en segundos osea el tiempo en que demorara en llevar al otro html que especificamos
+        out.println("<meta http-equiv='refresh' content= '5; URL=form.html'>");
         out.println("</head><body>");
         out.println("<h1>" + "Carga de imagen exitosa" + "</h1>");
         out.println("<h1>" + "Por favor espere un momento si quiere agregar otra mascota" + "</h1>");
@@ -84,6 +91,10 @@ public class MultipartServlet extends HttpServlet {
 
 
     }
+
+    /*
+     * metodo doGet encargado de enviar el Json con los datos de la mascota
+     */
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         response.setContentType("aplication/json");
