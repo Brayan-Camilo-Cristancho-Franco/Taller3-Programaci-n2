@@ -41,25 +41,28 @@ public class Indexservlet extends HttpServlet {
         if (user.get(1).getMail().equals(Username)) {
 
             rol = "propietario";
+            Cookie cookieUser = new Cookie("username", Username);
+            cookieUser.setMaxAge(3600);
+            response.addCookie(cookieUser);
+
+            Cookie cookieRol = new Cookie("rol", rol);
+            cookieRol.setMaxAge(3600);
+            response.addCookie(cookieRol);
             response.sendRedirect(request.getContextPath() + "/form.html");
 
 
         } else if (user.get(0).getMail().equals(Username)) {
             rol = "funcionario";
+            Cookie cookieUser = new Cookie("username", Username);
+            cookieUser.setMaxAge(3600);
+            response.addCookie(cookieUser);
+
+            Cookie cookieRol = new Cookie("rol", rol);
+            cookieRol.setMaxAge(3600);
+            response.addCookie(cookieRol);
             response.sendRedirect(request.getContextPath() + "/Funcionario.html");
 
         }
-
-
-        response.sendRedirect(request.getContextPath() + "/form.html");
-
-        Cookie cookieUser = new Cookie("username", Username);
-
-        response.addCookie(cookieUser);
-
-        Cookie cookieRol = new Cookie("rol", rol);
-
-        response.addCookie(cookieRol);
 
 
     }

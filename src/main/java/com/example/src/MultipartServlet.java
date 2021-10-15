@@ -79,7 +79,7 @@ public class MultipartServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         out.println("<html><head>");
-        out.println("<meta http-equiv='refresh' content= '10; URL=form.html'>");// ese 10 representa el tiempo que demore en refrescarse en segundos osea el tiempo en que demorara en llevar al otro html que especificamos
+        out.println("<meta http-equiv='refresh' content= '5; URL=form.html'>");// ese 10 representa el tiempo que demore en refrescarse en segundos osea el tiempo en que demorara en llevar al otro html que especificamos
         out.println("</head><body>");
         out.println("<h1>" + "Carga de imagen exitosa" + "</h1>");
         out.println("<h1>" + "Por favor espere un momento si quiere agregar otra mascota" + "</h1>");
